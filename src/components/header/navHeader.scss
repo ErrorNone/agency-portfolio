@@ -1,0 +1,24 @@
+@import "../../style/vars.scss";
+@import "../../style/mixins.scss";
+
+.nav {
+  width: 50%;
+  @include breakpoint($mobile-bp) {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: $white;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  &:hover {
+    text-decoration: underline;
+  }
+}
