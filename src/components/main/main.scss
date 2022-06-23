@@ -1,0 +1,22 @@
+@import "../../style/vars.scss";
+@import "../../style/mixins.scss";
+
+.main {
+    background-color: $apricot;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 135px;
+    margin: 0 auto;
+    @include breakpoint($mobile-bp) {
+      padding: 0 23px;
+    }
+    img {
+        max-width: 370px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+  }
