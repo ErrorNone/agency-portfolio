@@ -2,5 +2,10 @@
     @media screen and (max-width: $bp) {
         @content;
     }
-    
+}
+
+@mixin breakpointMinWidth ($bp) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
 }

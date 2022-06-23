@@ -2,9 +2,9 @@
 @import "../../style/mixins.scss";
 
 .nav-main {
-  @include breakpoint($mobile-bp) {
-    display: none;
-  }
+  // @include breakpoint($mobile-bp) {
+  //   display: none;
+  // }
 }
 
 .nav-main--inner {

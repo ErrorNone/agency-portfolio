@@ -12,11 +12,4 @@
     @include breakpoint($mobile-bp) {
       padding: 0 23px;
     }
-    img {
-        max-width: 370px;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-    }
   }
