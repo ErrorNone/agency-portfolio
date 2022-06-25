@@ -7,22 +7,25 @@
   // }
 }
 
-.nav-main--inner {
+.nav-main__inner {
   padding: 80px 0 75px;
   max-width: 563px;
   width: 100%;
   margin: 0 auto;
 }
 
-.nav-main--list {
+.nav-main__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-main--link {
+.nav-main__btn {
   color: $brown;
-  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  
   transition: all 0.2s linear;
   &:hover {
     color: $green;

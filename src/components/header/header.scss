@@ -1,7 +1,7 @@
 @import "../../style/vars.scss";
 @import "../../style/mixins.scss";
 
-.container {
+.header__container {
   // width: 100%;
   max-width: 1170px;
   padding: 0 135px;
@@ -15,7 +15,7 @@
   background-color: $black;
 }
 
-.header--top {
+.header__top {
   padding: 16px 0 86px;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.header--brand {
+.header__brand {
   a {
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.header--button {
+.header__button {
   font-size: 14px;
   text-transform: uppercase;
   color: $white;
@@ -65,7 +65,7 @@
   }
 }
 
-.header--bottom {
+.header__bottom {
   display: flex;
   flex-direction: column;
   text-align: center;

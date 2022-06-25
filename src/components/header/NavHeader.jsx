@@ -1,29 +1,28 @@
 import React from "react";
 import "./navHeader.scss";
 
-
 const NavHeader = () => {
   return (
     <div className="nav">
-      <ul className="nav--list">
-        <li className="nav--item">
-          <a href="#" className="nav--link">
-            <h3 className="nav--title">About</h3>
+      <ul className="nav__list">
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            <h3 className="nav__title">About</h3>
           </a>
         </li>
-        <li className="nav--item">
-          <a href="#" className="nav--link">
-            <h3 className="nav--title">Services</h3>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            <h3 className="nav__title">Services</h3>
           </a>
         </li>
-        <li className="nav--item">
-          <a href="#" className="nav--link">
+        <li className="nav__item">
+          <a href="#" className="nav__link">
             <h3 className="nav-title">Pricing</h3>
           </a>
         </li>
-        <li className="nav--item">
-          <a href="#" className="nav--link">
-            <h3 className="nav--title">Blog</h3>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            <h3 className="nav__title">Blog</h3>
           </a>
         </li>
       </ul>
