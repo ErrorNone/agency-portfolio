@@ -1,13 +1,13 @@
-import { LOAD_IMAGES } from "../types";
+import { GET_IMAGES } from "../types";
 
 const initialState = {
-  allImages: [],
+  images: [],
 };
 
-export const ImagesReducer = (state = initialState, action) => {
+export const imagesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case LOAD_IMAGES:
-      return { ...state, allImages: action.payload };
+    case GET_IMAGES:
+      return { ...state, images: action.payload };
     default:
       return state;
   }

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./card.scss";
+import ImagesItem from "./images/ImagesItem";
 
-const CardItem = ({ card }) => {
+const CardItem = ({ card, image }) => {
   const [border, setBorder] = useState(false);
+  console.log(image);
   return (
     <li className="card__item">
       <button
@@ -11,7 +13,9 @@ const CardItem = ({ card }) => {
           border === false ? "card__btn-border" : "card__btn-border card__btn-border--active"
         }
       >
-        <img src={card.data.image} alt="" />
+        <img src={image} alt="" />
+        
+         {/* <ImagesItem/> */}
         <button className="card__btn">{card.category}</button>
         <h4 className="card__title">{card.name}</h4>
       </button>

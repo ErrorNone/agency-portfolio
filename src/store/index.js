@@ -1,9 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import { ImagesReducer } from "./reducers/ImagesReducer";
+import { cardsReducer, imagesReducer } from "./reducers";
 
 const rootReducer = combineReducers({
-  images: ImagesReducer,
+  cards: cardsReducer,
+  images: imagesReducer,
 });
 
 export default createStore(rootReducer, applyMiddleware(thunk));
