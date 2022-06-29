@@ -20,12 +20,9 @@
   justify-content: space-between;
 }
 
-.nav-main__btn {
+.nav-main__link {
   color: $brown;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  
+  text-decoration: none;
   transition: all 0.2s linear;
   &:hover {
     color: $green;

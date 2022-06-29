@@ -1,7 +1,8 @@
 import React from "react";
-import Nav from "./NavHeader";
+import NavHeader from "./NavHeader";
 import "./header.scss";
 import logoWebesite from "../../img/logoWebesite.svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,13 +10,13 @@ const Header = () => {
       <div className="header__container">
         <div className="header__top">
           <div className="header__brand">
-            <a href="#">
+            <NavLink to="/">
               <img src={logoWebesite} alt="Logo" />
               <h1>Agency</h1>
-            </a>
+            </NavLink>
           </div>
-          <Nav />
-          <button className="header__button">Contact</button>
+          <NavHeader />
+          <NavLink className="header__button"  to="/contacts">Contact</NavLink>
         </div>
         <div className="header__bottom">
           <h2>Portfolio</h2>

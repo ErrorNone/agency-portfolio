@@ -15,6 +15,7 @@ const Loader = () => {
         <div></div>
         <div></div>
       </div>
+      <h6>Please stock up on coffee and cookies, the download may take a little longer than usual...</h6>
     </div>
   );
 };
